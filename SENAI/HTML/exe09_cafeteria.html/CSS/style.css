@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+*{
+    margin: 0; 
+    padding: 0; 
+    /*Assegura que padding e margin sejam incluidos nos dimensos totais do elemento*/
+    box-sizing: border-box; 
+}
+
+body{
+    color: aliceblue; 
+    background-color: black;
+}
+
+.logo{
+    font-family: Teko; 
+    font-size: 2rem; 
+    color: aliceblue;
+    margin-right: 5rem;
+} 
+
+.box{ 
+    background-color: black;
+    display: flex;
+    align-items: center; 
+    flex-direction: row; 
+    justify-content: center; 
+    height: 70px;   
+} 
+
+.menu{ 
+    color: aliceblue;
+ }
+
+.texto{
+    color: aliceblue;
+    padding: 10px;
+    text-decoration: none; 
+    font-weight: bold;
+} 
+
+.banner-cafe{ 
+    max-width: 1120px; 
+    margin: auto; 
+} 
+
+.banner-cafe img{
+    width: 100%; 
+    box-shadow: 10px 0px 20px rgba(0,0, 0, 0.5);
+    border-radius: 2px; 
+    opacity: 0.7; 
+} 
+
+.banner-novidades{
+    max-width: 1120px;
+    height: 60vh; 
+    margin: auto; 
+    padding: 0rem 2rem; 
+    gap: 6rem; 
+    display: flex; 
+    justify-content: space-between; 
+} 
+
+.banner-conteudo{
+    /*Organizando o conteudo em coluna*/
+    display: flex; 
+    flex-direction: column;
+    gap: 1rem;
+} 
+
+.banner-imagens{
+    /*Definir largura máxima*/
+    max-width: 45%;
+    /*Exibir as imagens em 4 colunas*/
+    column-count: 4;
+}
+
+.banner-imagens > figure > img{
+    width: 100%;
+    border-radius: 5px;
+} 
+
+.card-novo{
+    display: flex;
+    overflow: scroll;
+    gap: 3rem;
+  }
+
+  /*Removendo a barra de scrool*/
+  .card-novo::-webkit-scrollbar{
+    display: none;
+  }
+
+  .receitas{
+    /*Organizando em colunas*/
+    display: flex;
+    flex-direction: column;
+    max-width: 1120px;
+    padding: 2.5rem 2rem;
+    margin: auto;
+  } 
+
+.cabecalho-card{
+    background-color: #534743; 
+    padding: 5px; 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
+} 
+
+.card{
+    margin-left: 40px;
+    border:   1px solid #ccc; 
+    border-radius: 1opx;  
+    box-shadow: 5px 0px 10px  rgba(255,255,255,0.7);  
+    max-width: 260px; 
+} 
+
+.rodape-card{
+    background-color: #534743; 
+    padding: 3px;
+    border-bottom-left-radius: 10px; 
+    border-bottom-right-radius: 10px; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+} 
+
+button{
+    width: 80px; 
+    background-color: #A45A49; 
+    color: #f7DC6F; 
+    border-radius: 8px; 
+    padding: 4px; 
+} 
+
+/*Mapa*/
+.mapa{
+    max-width: 1120px;
+    width: 600px;
+    height: 400px;
+
+    /*Aplica papel de parede a nossa div*/
+    background-image: url(../img/image.png);
+    background-repeat: no-repeat;
+    /*Aplica tamanho da img em todo espaço*/
+    background-size: cover;
+    margin: 100px;
+    position: relative;
+
+}
+
+.icone{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #ff6347;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.icone1{
+    top: 120px;
+    left: 380px;
+}
+
+.div-hover{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 500px;
+    height: 400px;
+}
+
+.icone{
+    display: block;
+    position: absolute ;
+    top: 15%;
+    left: 37%;
+}
+
+/* Estilização melhores avaliados */
+
+.container-galeria{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    background-color: #ccc;
+}
+
+.item-galeria{
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: aqua;
+}
+
+.item-galeria  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, opacity 0.3 ease;
+}
+
+.item-galeria img:hover{
+    transform: scale(1.1);
+}

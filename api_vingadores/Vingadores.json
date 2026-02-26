@@ -1,0 +1,41 @@
+{
+    "Heroi1": {
+        "id": 1,
+        "nome": "Hulk",
+        "poder": "Força",
+        "idade": 54,
+        "identidade": "Bruce Banner"
+    },
+    "Heroi2": {
+        "id": 2,
+        "nome": "Capitão América",
+        "poder": "Super força",
+        "idade": 100,
+        "identidade": "Steve Rogers"
+    },
+    "Heroi3": {
+        "id": 3,
+        "nome": "Thor",
+        "poder": "Raio",
+        "idade": 1500,
+        "identidade": "Thor Odinson"
+    },
+    "Heroi4": {
+        "id": 4,
+        "nome": "Homem Aranha",
+        "poder": "Super força",
+        "idade": 17,
+        "identidade": "Peter Parker"
+    }, 
+    "Heroi5": {
+        "id": 5,
+        "nome": "Homem de Ferro",
+        "poder": "Dinheiro",
+        "idade": 53,
+        "identidade": "Tony Stark"
+    }
+
+
+
+    
+}

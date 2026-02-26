@@ -1,0 +1,114 @@
+ /* Seletor universal */
+ *{
+   margin: 0;
+}
+/* Seletor de tipo, aplicando em uma tag */
+p{
+   color: rgb(12, 73, 51);
+}
+
+/* Seletor de classe */
+.paragrafo{
+    background-color: rgb(85, 255, 6);
+    /* margin: 10px; - Aplica em todas as margens*/
+    /* margin:  10px 40px; - Aplica nas margens 'Laterais' e 'superior e inferior' */
+    font-size: xx-large;
+    /*margin: 10px 20px 30px 40px; aplica margem top, right, bottom, left*/
+   margin-left: 50px 20px;
+   /*Alinha elementos ao centro*/
+   text-align: center;
+}
+
+.imagem{
+   width: 150px;
+   height: 100px;
+}
+
+.tabela{
+   /* remover os espaços entre tabelas */
+   border-collapse: collapse;
+   width: 100%;
+}
+
+.cabecalho, .celula {
+   /* configura o formato da borda: Expessura, tipo e cor */
+   border: 2px solid #ddd;
+
+   /* define o espaçamento interno */
+   padding: 5px;
+   text-align: left;
+   color:black
+}
+
+.cabecalho2{
+   background-color:rgb(159, 142, 234);
+}
+
+.formulario{ 
+   background-color: rgb(249, 12, 154);
+}
+.input-nome{
+   /* remove a borda do elemento*/
+   border: none;
+   border-radius: 5px;
+   margin-left: 50px;
+   opacity: 70%;
+}
+.botao{
+   background-color: rgb(56, 232, 16);
+   border:none;
+   border-radius: 5px;
+   padding: 5px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: medium;
+   /* aplica sombra no texto posição x,y blur e o rgba que aplica com opacidade*/
+   text-shadow : 11px 1px 4px rgb(85, 255, 6);
+}
+.checar{
+   width: 20px;
+   height: 20px;
+   margin-left: 5px;
+   /*modifica o tipo do cursor */
+   cursor: pointer;
+   /*zerar as configurações de aparência*/
+   appearance: none;
+   background-color: rgb(226, 252, 242);
+   border: 2px solid #250b54;
+   border-radius: 5px;
+
+}
+.checar:checked{
+   background-color: blue;
+}
+.email{
+   width:300px;
+   padding: 5px 5px;
+   margin-left: 5px;
+   border:2px solid white;
+}
+.selecao{
+   appearance: none;
+   width: 300px;
+   font: size 16px;
+   color:rgb(73, 54, 30);
+   background-color: bisque;
+   border:2px solid #250b54;
+   border-radius: 5px;
+   cursor:pointer;
+   /*sombra no imput */
+   box-shadow: 0 2px 5px rgb(56, 232, 16);
+}
+
+.radio{
+   appearance: none;
+   width: 20px;
+   height: 20px;
+   border: 2px solid black; 
+   border-radius: 50%;
+   cursor:pointer
+}
+/* Pseudoclasse, quanto o estado do objeto muda, ele atribui outras propriedades*/
+.radio:checked{
+   background-color: rgb(26, 232, 60);
+   border-color: rgb(84, 24, 248);
+}

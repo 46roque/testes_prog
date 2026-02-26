@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de inscrição</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--linkar bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!--linkar icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+</head>
+<body>
+    <div class="banner-container">
+        <div class="banner">
+            <img src="./img/banner.png" alt="Banner Evento">
+            <div class="text-center banner-text">
+                <h1>TechEdu Senai 2024</h1>
+                <p>Evento de tecnologia e educação</p>
+                <a class="btn btn-primary" href="#inscricao">Garanta sua vaga</a>
+            </div>
+
+    <!-- Formulario de incrição-->
+     <section class="container">
+        <h2 class="text-center mb-4">Formulario de inscrição</h2>
+        <form action="" class="d-flex flex-wrap gap-3 justify-content-between">
+            <div class="form-group">
+                <label class="form-label">Nome completo</label>
+                <input type="text" class="form-control" id="nome" name="nome" required placeholder="Digite seu nome">
+            </div>
+            <div class="form-group">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required placeholder="Digite seu email">
+            </div>
+            <div>
+                <label>Telefone</label>
+                <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="Digite seu telefone">
+            </div>
+            <div class="form-group">
+                <label class="form-label">Escolha seu evento</label>
+                <select name="evento" id="evento" class="form-control">
+                    <option value="" disabled selected>Selecione um evento</option>
+                    <option value="palestras">Palestras</option>
+                    <option value="network">Sessão network</option>
+                    <option value="workshop">Workshop</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="">Mensagem</label>
+                <textarea class="form-control" name="" id=""></textarea>
+            </div>
+            <div>
+                <button class="btn btn-primary">Enviar Inscrição</button>
+            </div>
+        </form>
+     </section>        
+
+    <!--linkar javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
